@@ -19,6 +19,18 @@ const styles = StyleSheet.create({
     highlight: {
       fontWeight: '700',
     },
+    headerRight: {
+        marginRight: 10,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    dropdownStyle: {
+      borderColor: 'gray',
+      borderWidth: 2,
+      backgroundColor: '#fff',
+      color: 'gray',
+      minHeight: 40,
+    },
 });
 
 export default styles;
