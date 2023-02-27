@@ -14,8 +14,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
-import styles from './styles';
-import Section from './Section';
+import styles from '../styles';
+import Section from '../Section';
 
 function HomeScreen(): JSX.Element {
 
@@ -25,10 +25,6 @@ function HomeScreen(): JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={'light-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>

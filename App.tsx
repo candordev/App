@@ -8,10 +8,12 @@ import {
 } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './HomeScreen';
-import ChatScreen from './ChatScreen';
-import NewPostScreen from './NewPostScreen';
-import AntDesign from 'react-native-vector-icons/AntDesign';
+import HomeScreen from './Screens/HomeScreen';
+import ChatScreen from './Screens/ChatScreen';
+import NewPostScreen from './Screens/NewPostScreen';
+import InboxScreen from './Screens/InboxScreen';
+import ProfileScreen from './Screens/ProfileScreen';
+import Icon from 'react-native-vector-icons/Feather';
 
 const Tab = createBottomTabNavigator();
 
@@ -26,26 +28,33 @@ function App(): JSX.Element {
       <Tab.Navigator
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
+            let iconName : string = "user";
 
             if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list' : 'ios-list-outline';
+              iconName = "home"
+            } else if (route.name === 'Chat') {
+              iconName = "message-circle"
+            } else if (route.name === 'NewPost') {
+              iconName = "plus-circle"
+            } else if (route.name === 'Inbox') {
+              iconName = "inbox"
+            } else if (route.name === 'Profile') {
+              iconName = "user"
             }
-
             // You can return any component that you like here!
-            return <AntDesign name="home"/>;
+            return <Icon name={iconName} size={size} color={color}/>;
           },
-            tabBarActiveTintColor: 'tomato',
+            tabBarActiveTintColor: 'mediumslateblue',
             tabBarInactiveTintColor: 'gray',
+            tabBarShowLabel: false,
+            headerShown: false,
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Chat" component={ChatScreen} />
         <Tab.Screen name="NewPost" component={NewPostScreen} />
+        <Tab.Screen name="Inbox" component={InboxScreen} />
+        <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
