@@ -27,6 +27,9 @@ function HeaderRight(): JSX.Element {
             style={styles.dropdownStyle}
             textStyle={{fontSize: 18, color: 'gray', fontWeight: '600'}}
             dropDownContainerStyle={[styles.dropdownStyle, {borderTopWidth: 1}]}
+            ArrowDownIconComponent={() => <Icon name={'chevron-down'} size={20} color={'gray'}/>}
+            ArrowUpIconComponent={() => <Icon name={'chevron-up'} size={20} color={'gray'}/>}
+            TickIconComponent={() => <Icon name={'git-commit'} size={20} color={'gray'}/>}
         />
         <Icon name="search" size={30} color="gray"/>
     </View>
