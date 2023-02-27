@@ -1,11 +1,4 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  View,
-} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './Screens/HomeScreen';
@@ -51,7 +44,8 @@ function App(): JSX.Element {
             headerRight: HeaderRight,
             headerTitle: "Candor",
             headerTitleAlign: "left",
-            headerStyle: {height: 110}
+            headerTitleStyle: {color: "gray", fontSize: 25},
+            //headerStyle: {height: 110}
             // headerShown: false,
         })}
       >

@@ -1,4 +1,5 @@
 import { 
+  Platform,
     StyleSheet,
 } from 'react-native';
 
@@ -20,10 +21,12 @@ const styles = StyleSheet.create({
       fontWeight: '700',
     },
     headerRight: {
-        marginRight: 10,
+        marginRight: 15,
         flexDirection: 'row',
         alignItems: 'center',
+        marginBottom: Platform.OS === 'ios' ? 10 : 0,
     },
+    
     dropdownStyle: {
       borderColor: 'gray',
       borderWidth: 2,
