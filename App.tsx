@@ -14,6 +14,7 @@ import NewPostScreen from './Screens/NewPostScreen';
 import InboxScreen from './Screens/InboxScreen';
 import ProfileScreen from './Screens/ProfileScreen';
 import Icon from 'react-native-vector-icons/Feather';
+import HeaderRight from './Components/HeaderRight';
 
 const Tab = createBottomTabNavigator();
 
@@ -47,7 +48,11 @@ function App(): JSX.Element {
             tabBarActiveTintColor: 'mediumslateblue',
             tabBarInactiveTintColor: 'gray',
             tabBarShowLabel: false,
-            headerShown: false,
+            headerRight: HeaderRight,
+            headerTitle: "Candor",
+            headerTitleAlign: "left",
+            headerStyle: {height: 110}
+            // headerShown: false,
         })}
       >
         <Tab.Screen name="Home" component={HomeScreen} />

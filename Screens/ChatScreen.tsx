@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 function ChatScreen(): JSX.Element {
   return <SafeAreaView>
-      <Text>Chat Screen</Text>
+      {/* <Text>Chat Screen</Text> */}
       </SafeAreaView>;
 }
 
