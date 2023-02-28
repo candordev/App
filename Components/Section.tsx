@@ -9,19 +9,20 @@ import styles from '../Styles/styles';
 
 type SectionProps = PropsWithChildren<{
     title: string;
+    description: string;
   }>;
   
-function Section({children, title}: SectionProps): JSX.Element {
+function Section({children, title, description}: SectionProps): JSX.Element {
     return (
         <View style={styles.sectionContainer}>
-        <Text
-            style={styles.sectionTitle}>
-            {title}
-        </Text>
-        <Text
-            style={styles.sectionDescription}>
-            {children}
-        </Text>
+            <Text
+                style={styles.sectionTitle}>
+                {title}
+            </Text>
+            <Text
+                style={styles.sectionDescription}>
+                {description}
+            </Text>
         </View>
     );
 }

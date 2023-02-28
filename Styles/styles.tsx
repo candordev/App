@@ -5,8 +5,9 @@ import {
 
 const styles = StyleSheet.create({
     sectionContainer: {
-      marginTop: 32,
+      marginTop: 5,
       paddingHorizontal: 24,
+      backgroundColor: '#fff',
     },
     sectionTitle: {
       fontSize: 24,
@@ -26,7 +27,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginBottom: Platform.OS === 'ios' ? 10 : 0,
     },
-    
     dropdownStyle: {
       borderColor: 'gray',
       borderWidth: 2,
@@ -34,6 +34,21 @@ const styles = StyleSheet.create({
       color: 'gray',
       minHeight: 40,
     },
+
+    headerLeft: {
+      flex: 1,
+      flexDirection: 'row',
+    },
+
+    header: {
+      justifyContent: 'space-between',
+      flexDirection: 'row',
+    },
+
+    statusRow: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    }
 });
 
 export default styles;
