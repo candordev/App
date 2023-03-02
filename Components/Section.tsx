@@ -53,8 +53,8 @@ function Section({children, title, description}: SectionProps): JSX.Element {
                 {description}
             </Text>
             <View style={{flexDirection: 'row', justifyContent:'space-between', marginTop:15}}>
-                <IconTextButton icon='dollar-sign' text='400' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
-                <IconTextButton icon='message-square' text='275' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                <IconText icon='dollar-sign' text='400' color='gray' size={20}></IconText>
+                <IconText icon='message-square' text='275' color='gray' size={20}></IconText>
                 <IconTextButton icon='thumbs-up' text='1.2k' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
                 <IconTextButton icon='thumbs-down' text='200' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
             </View>
