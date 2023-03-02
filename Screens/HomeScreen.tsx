@@ -26,11 +26,11 @@ function HomeScreen(): JSX.Element {
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your editssss.
           </Section>
-          <Section title="See Your Changes more text added" description='something'>
+          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
           </Section>
-          <Section title="Debug" description='something'>
+          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
           </Section>
-          <Section title="Learn More" description='something'>
+          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
             Read the docs to discover what to do next:
           </Section>
         </View>
