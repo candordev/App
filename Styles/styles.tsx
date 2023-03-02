@@ -49,7 +49,14 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       flexDirection: 'row',
     },
-
+    nextButton: {
+      backgroundColor: '#fff',
+      borderColor: 'gray',
+      borderWidth: 2,
+      borderRadius: 4,
+      padding: 5,
+      marginBottom: 5,
+    },
     profilePicture: {
       height: 40,
       width: 40,
@@ -58,7 +65,6 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       borderColor: "gray",
     },
-
     profilePictureBig: {
       height: 80,
       width: 80,
