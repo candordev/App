@@ -1,4 +1,4 @@
-import { 
+import {
   Platform,
     StyleSheet,
 } from 'react-native';
@@ -8,15 +8,20 @@ const styles = StyleSheet.create({
       marginTop: 5,
       paddingHorizontal: 24,
       backgroundColor: '#fff',
+      marginBottom:5,
+      paddingTop:15,
+      paddingBottom:15,
     },
     sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
+      fontSize: 20,
+      fontWeight: '500',
+      marginTop:10
     },
     sectionDescription: {
       marginTop: 8,
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: '400',
+      color:'black',
     },
     highlight: {
       fontWeight: '700',
@@ -44,11 +49,6 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       flexDirection: 'row',
     },
-
-    statusRow: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-    }, 
     nextButton: {
       backgroundColor: '#fff',
       borderColor: 'gray',
@@ -57,7 +57,22 @@ const styles = StyleSheet.create({
       padding: 5,
       marginBottom: 5,
     },
-    
+    profilePicture: {
+      height: 40,
+      width: 40,
+      borderRadius: 20,
+      overflow: 'hidden',
+      borderWidth: 1,
+      borderColor: "gray",
+    },
+    profilePictureBig: {
+      height: 80,
+      width: 80,
+      borderRadius: 20,
+      overflow: 'hidden',
+      borderWidth: 1,
+      borderColor: "gray",
+    },
 });
 
 export default styles;
