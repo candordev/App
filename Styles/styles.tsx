@@ -48,7 +48,16 @@ const styles = StyleSheet.create({
     statusRow: {
       flexDirection: 'row',
       justifyContent: 'space-between',
-    }
+    }, 
+    nextButton: {
+      backgroundColor: '#fff',
+      borderColor: 'gray',
+      borderWidth: 2,
+      borderRadius: 4,
+      padding: 5,
+      marginBottom: 5,
+    },
+    
 });
 
 export default styles;
