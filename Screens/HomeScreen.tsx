@@ -22,7 +22,7 @@ function HomeScreen(): JSX.Element {
         style={backgroundStyle}
         >
         <View style={{flex:1}}>
-          <Section title="Step One" description='something'>
+          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your editssss.
           </Section>
