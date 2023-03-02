@@ -1,4 +1,4 @@
-import { 
+import {
   Platform,
     StyleSheet,
 } from 'react-native';
@@ -48,6 +48,15 @@ const styles = StyleSheet.create({
     profilePicture: {
       height: 40,
       width: 40,
+      borderRadius: 20,
+      overflow: 'hidden',
+      borderWidth: 1,
+      borderColor: "gray",
+    },
+
+    profilePictureBig: {
+      height: 80,
+      width: 80,
       borderRadius: 20,
       overflow: 'hidden',
       borderWidth: 1,
