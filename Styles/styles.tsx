@@ -45,10 +45,14 @@ const styles = StyleSheet.create({
       flexDirection: 'row',
     },
 
-    statusRow: {
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-    }
+    profilePicture: {
+      height: 40,
+      width: 40,
+      borderRadius: 20,
+      overflow: 'hidden',
+      borderWidth: 1,
+      borderColor: "gray",
+    },
 });
 
 export default styles;

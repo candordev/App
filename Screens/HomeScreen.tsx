@@ -21,7 +21,7 @@ function HomeScreen(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}
         >
-        <View>
+        <View style={{flex:1}}>
           <Section title="Step One" description='something'>
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your editssss.
