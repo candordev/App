@@ -11,7 +11,7 @@ type ProgressBarProps = {
   
 function ProgressBar(props: ProgressBarProps): JSX.Element {
     return (
-        <View style={{flexDirection: 'row', width:102, height:17, borderColor:'black', borderWidth:1}}>
+        <View style={{flexDirection: 'row', width:102, height:17, borderColor:'black', borderWidth:1, marginRight:10}}>
             <View style={{width:25, height: 15, backgroundColor: 'powderblue'}} />
             <View style={{width:25, height: 15, backgroundColor: 'skyblue'}} />
             <View style={{width:25, height: 15, backgroundColor: 'steelblue'}} />
