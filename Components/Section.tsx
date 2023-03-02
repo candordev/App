@@ -11,6 +11,8 @@ import ProfilePicture from './ProfilePicture';
 import ProgressBar from './ProgressBar';
 
 import Icon from 'react-native-vector-icons/Feather';
+import IconText from './IconText';
+import IconTextButton from './IconTextButton';
 
 type SectionProps = PropsWithChildren<{
     title: string;
@@ -26,7 +28,7 @@ let date = '1/21/23'
 function Section({children, title, description}: SectionProps): JSX.Element {
     return (
         <View style={styles.sectionContainer}>
-            <View style={{flexDirection: 'row', marginTop:20, justifyContent:'center'}}>
+            <View style={{flexDirection: 'row', alignItems:'center'}}>
                 <ProfilePicture imageUrl='https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/244305674_1199851353874099_7498215930166384149_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=hB9YE6db7AIAX_HgwSF&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfCpwZNohvZhEMUcJuq0ytfmPCui_c-jViJc7cmjZ8AYew&oe=64058AA8&_nc_sid=8fd12b'/>
                 <View>
                     <View style={{flexDirection: 'row'}}>
@@ -50,6 +52,13 @@ function Section({children, title, description}: SectionProps): JSX.Element {
                 style={styles.sectionDescription}>
                 {description}
             </Text>
+            <View style={{flexDirection: 'row', justifyContent:'space-between', marginTop:15}}>
+                <IconTextButton icon='dollar-sign' text='400' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                <IconTextButton icon='message-square' text='275' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                <IconTextButton icon='thumbs-up' text='1.2k' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                <IconTextButton icon='thumbs-down' text='200' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+            </View>
+
         </View>
     );
 }

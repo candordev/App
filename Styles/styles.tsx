@@ -8,15 +8,20 @@ const styles = StyleSheet.create({
       marginTop: 5,
       paddingHorizontal: 24,
       backgroundColor: '#fff',
+      marginBottom:5,
+      paddingTop:15,
+      paddingBottom:15,
     },
     sectionTitle: {
-      fontSize: 24,
-      fontWeight: '600',
+      fontSize: 20,
+      fontWeight: '500',
+      marginTop:10
     },
     sectionDescription: {
       marginTop: 8,
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: '400',
+      color:'black',
     },
     highlight: {
       fontWeight: '700',
