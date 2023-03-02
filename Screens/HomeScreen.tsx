@@ -37,6 +37,6 @@ function HomeScreen(): JSX.Element {
       </ScrollView>
     </SafeAreaView>
   );
-} 
+}
 
 export default HomeScreen;
