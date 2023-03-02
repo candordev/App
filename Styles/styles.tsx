@@ -67,6 +67,15 @@ const styles = StyleSheet.create({
       borderWidth: 1,
       borderColor: "gray",
     },
+
+    nextButton: {
+      backgroundColor: '#fff',
+      borderColor: 'gray',
+      borderWidth: 2,
+      borderRadius: 4,
+      padding: 5,
+      marginBottom: 5,
+    },
 });
 
 export default styles;
