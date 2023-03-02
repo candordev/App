@@ -2,13 +2,13 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/Feather';
-import HeaderRight from './Components/HeaderRight';
+import HeaderRight from '../Components/HeaderRight';
 import Root from './Root';
-import PostScreen from './Screens/PostScreen';
+import PostScreen from '../Screens/PostScreen';
 import { Text, Touchable, TouchableOpacity, View } from 'react-native';
-import HeaderLeft from './Components/HeaderLeft';
-import Header from './Components/Header';
-import BackButton from './Components/BackButton';
+import HeaderLeft from '../Components/HeaderLeft';
+import Header from '../Components/Header';
+import BackButton from '../Components/BackButton';
 
 const Stack = createNativeStackNavigator();
 

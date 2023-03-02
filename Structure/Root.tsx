@@ -1,13 +1,13 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './Screens/HomeScreen';
-import ChatScreen from './Screens/ChatScreen';
-import NewPostScreen from './Screens/NewPostScreen';
-import InboxScreen from './Screens/InboxScreen';
-import ProfileScreen from './Screens/ProfileScreen';
+import HomeScreen from '../Screens/HomeScreen';
+import ChatScreen from '../Screens/ChatScreen';
+import NewPostScreen from '../Screens/NewPostScreen';
+import InboxScreen from '../Screens/InboxScreen';
+import ProfileScreen from '../Screens/ProfileScreen';
 import Icon from 'react-native-vector-icons/Feather';
-import HeaderRight from './Components/HeaderRight';
+import HeaderRight from '../Components/HeaderRight';
 
 const Tab = createBottomTabNavigator();
 
