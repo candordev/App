@@ -19,7 +19,7 @@ function IconText(props: IconTextProps): JSX.Element {
     return (
         <View style={{flexDirection: 'row', alignItems:'center'}}>
             <Icon name={props.icon} size={props.size} color={props.color}/>
-            <Text style={{color:props.color, marginLeft:5}}>{props.text}</Text>
+            <Text style={{color:props.color, marginLeft:5, fontWeight:'500'}}>{props.text}</Text>
         </View>
     );
 }

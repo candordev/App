@@ -23,7 +23,7 @@ function HeaderRight(): JSX.Element {
             setOpen={setOpen}
             setValue={setValue}
             setItems={setItems}
-            containerStyle={{height:40, width: 180, paddingRight: 10}}
+            containerStyle={{height:40, width: 150, paddingRight: 10}}
             style={styles.dropdownStyle}
             textStyle={{fontSize: 18, color: 'gray', fontWeight: '600'}}
             dropDownContainerStyle={[styles.dropdownStyle, {borderTopWidth: 1}]}

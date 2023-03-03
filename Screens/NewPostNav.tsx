@@ -30,7 +30,7 @@ function NewPostNav({navigation} : {navigation : any}): JSX.Element {
         headerLeft: () => (<BackButton onPress={() => navigation.goBack()}/>),
         headerTitle: "Candor",
         headerTitleAlign: "left",
-        headerTitleStyle: {color: "gray", fontSize: 25}
+        headerTitleStyle: {color: "mediumslateblue", fontSize: 25}
       }}>
 
       <PostStack.Screen name="new post" component={PostScreenTitle}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/Feather';
 import HeaderRight from '../Components/HeaderRight';
@@ -14,12 +14,8 @@ const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {
 
-  const backgroundStyle = {
-    backgroundColor: "white",
-  };
-
   return (
-    <NavigationContainer>
+     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen 
           name="root" 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from '../Screens/HomeScreen';
 import ChatScreen from '../Screens/ChatScreen';
@@ -39,7 +38,7 @@ function Root(): JSX.Element {
             headerRight: HeaderRight,
             headerTitle: "Candor",
             headerTitleAlign: "left",
-            headerTitleStyle: {color: "gray", fontSize: 25},
+            headerTitleStyle: {color: "mediumslateblue", fontSize: 25},
         })}
     >
     <Tab.Screen name="Home" component={HomeScreen} />

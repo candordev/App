@@ -5,21 +5,20 @@ import {
 
 const styles = StyleSheet.create({
     sectionContainer: {
-      marginTop: 5,
+      marginTop: 10,
       paddingHorizontal: 24,
       backgroundColor: '#fff',
-      marginBottom:5,
       paddingTop:15,
       paddingBottom:15,
     },
     sectionTitle: {
-      fontSize: 20,
+      fontSize: 18,
       fontWeight: '500',
       marginTop:10
     },
     sectionDescription: {
       marginTop: 8,
-      fontSize: 16,
+      fontSize: 14,
       fontWeight: '400',
       color:'black',
     },
