@@ -10,16 +10,11 @@ import styles from '../Styles/styles';
 import Section from '../Components/Section';
 
 function HomeScreen(): JSX.Element {
-
-  const backgroundStyle = {
-    backgroundColor: "lightgray",
-  };
-
+  
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <View>
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}
         >
         <View style={{flex:1}}>
           <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
@@ -35,7 +30,7 @@ function HomeScreen(): JSX.Element {
           </Section>
         </View>
       </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
