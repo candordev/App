@@ -38,7 +38,7 @@ function Root(): JSX.Element {
             headerRight: HeaderRight,
             headerTitle: "Candor",
             headerTitleAlign: "left",
-            headerTitleStyle: {color: "gray", fontSize: 25},
+            headerTitleStyle: {color: "mediumslateblue", fontSize: 25},
         })}
     >
     <Tab.Screen name="Home" component={HomeScreen} />
