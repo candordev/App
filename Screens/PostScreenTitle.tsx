@@ -13,8 +13,8 @@ function PostScreenTitle(): JSX.Element
         fontWeight: '600',
         color: 'gray',
         marginTop: 30,
-        marginLeft:20,}} 
-        placeholder = "Title" 
+        marginLeft:20,}}
+        placeholder = "Title"
         />
     </View>
 
@@ -25,7 +25,7 @@ function PostScreenTitle(): JSX.Element
         flex: 1,
         backgroundColor: 'white', padding: 5, margin: 20}}>
 
-      <Text style = {{ 
+      <Text style = {{
         fontSize: 24,
         fontWeight: '600',
         color: 'gray',
