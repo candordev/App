@@ -17,8 +17,6 @@ type PostScreenProps = {
 
 function PostScreen({route, navigation}: PostScreenProps): JSX.Element {
   const props = route.params;
-  navigation.setOptions({title: props.group});
-  console.log(props);
   return (
     <View style={{flex: 1}}>
       <ScrollView contentInsetAdjustmentBehavior="automatic">
