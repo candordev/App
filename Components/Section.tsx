@@ -25,13 +25,13 @@ type SectionProps = PropsWithChildren<{
 let displayName = "John M"
 let handle = "@johnm"
 
-let type = 'Kansas'
+let group = 'Kansas'
 let date = 'March 1'
 
 function Section({children, title, description, step, navigation}: SectionProps): JSX.Element {
     return (
         <Pressable
-        onPress={() => {navigation.navigate('post', {title: "hello", description: description, step: step})}}
+        onPress={() => {navigation.navigate('post', {title: title, description: description, step: step, group: group, displayName: displayName, handle: handle, date: date})}}
         >
             <View style={styles.sectionContainer}>
                 <View style={{flexDirection: 'row', alignItems:'center'}}>
@@ -43,7 +43,7 @@ function Section({children, title, description, step, navigation}: SectionProps)
                         </View>
                         <View style={{flexDirection: 'row'}}>
                             <Text style={{fontSize: 15, marginLeft: 10, marginTop: 3, color:'gray'}}>{date + ' ·'}</Text>
-                            <Text style={{fontSize: 15, marginLeft: 5, marginTop: 3, color: 'mediumslateblue'}}>{type}</Text>
+                            <Text style={{fontSize: 15, marginLeft: 5, marginTop: 3, color: 'mediumslateblue'}}>{group}</Text>
                         </View>
                     </View>
                     <View style={{flex: 1}}></View>
