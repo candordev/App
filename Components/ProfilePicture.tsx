@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    Image,
+  Image,
   TouchableHighlight,
   View,
 } from 'react-native';
@@ -14,7 +14,7 @@ type ProfilePictureProps = {
 
 function ProfilePicture(props: ProfilePictureProps): JSX.Element {
     return (
-        <TouchableHighlight onPress={() => console.log('pressed')}>
+        <TouchableHighlight onPress={() => console.log('I am Jain and I am pressed')}>
             <Image source={{ uri: props.imageUrl}} style={props.big ? styles.profilePictureBig : styles.profilePicture} />
         </TouchableHighlight>
     );
