@@ -2,12 +2,14 @@ import {
   Platform,
     StyleSheet,
 } from 'react-native';
+import colors from './colors';
+import fonts from './fonts';
 
 const styles = StyleSheet.create({
     sectionContainer: {
       marginTop: 10,
       paddingHorizontal: 15,
-      backgroundColor: '#fff',
+      backgroundColor: colors.white,
       paddingTop:15,
       paddingBottom:15,
     },
@@ -15,14 +17,14 @@ const styles = StyleSheet.create({
       fontSize: 18,
       fontWeight: '500',
       marginTop:10,
-      fontFamily: 'Montserrat',
+      fontFamily: fonts.title,
     },
     sectionDescription: {
       marginTop: 8,
       fontSize: 14,
       fontWeight: '400',
       color:'black',
-      fontFamily: 'OpenSans-Regular',
+      fontFamily: fonts.body,
     },
     highlight: {
       fontWeight: '700',
@@ -34,10 +36,10 @@ const styles = StyleSheet.create({
         marginBottom: Platform.OS === 'ios' ? 10 : 0,
     },
     dropdownStyle: {
-      borderColor: 'gray',
+      borderColor: colors.gray,
       borderWidth: 2,
-      backgroundColor: '#fff',
-      color: 'gray',
+      backgroundColor: colors.white,
+      color: colors.gray,
       minHeight: 40,
     },
     headerLeft: {
@@ -56,7 +58,7 @@ const styles = StyleSheet.create({
       borderRadius: 20,
       overflow: 'hidden',
       borderWidth: 1,
-      borderColor: "gray",
+      borderColor: colors.gray,
     },
 
     profilePictureBig: {
@@ -65,16 +67,37 @@ const styles = StyleSheet.create({
       borderRadius: 20,
       overflow: 'hidden',
       borderWidth: 1,
-      borderColor: "gray",
+      borderColor: colors.gray,
     },
 
     nextButton: {
-      backgroundColor: '#fff',
-      borderColor: 'gray',
+      backgroundColor: colors.white,
+      borderColor: colors.gray,
       borderWidth: 2,
       borderRadius: 4,
       padding: 5,
       marginBottom: 5,
+    },
+    commentContainer: {
+      paddingHorizontal: 15,
+      backgroundColor: colors.white,
+      paddingTop:15,
+      paddingBottom:15,
+      marginTop: 10,
+    },
+    commentDescription: {
+      marginTop: 4,
+      fontSize: 14,
+      fontWeight: '400',
+      color: colors.black,
+      fontFamily: fonts.body,
+    },
+    replyContainer: {
+      paddingHorizontal: 15,
+      backgroundColor: colors.white,
+      paddingTop:15,
+      borderLeftWidth: 2,
+      borderLeftColor: colors.gray
     },
 });
 
