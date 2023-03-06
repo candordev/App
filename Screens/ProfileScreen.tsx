@@ -25,10 +25,6 @@ function ProfileScreen({navigation}: {navigation: any}): JSX.Element {
         <ProfileBlurb/>
         <Nav/>
       </>
-
-      /* <Text>Helooooo</Text>
-      <Button title="Open a post" onPress={() => navigation.navigate('post')} /> */
-    // </SafeAreaView>
   );
 }
 
