@@ -14,7 +14,7 @@ type PostScreenProps = {
 
 function PostScreen({ route, navigation } : PostScreenProps): JSX.Element {
   const props = route.params;
-  navigation.setOptions({ title: props.group })
+  //navigation.setOptions({ title: props.group })
   console.log(props)
   return <View style={styles.sectionContainer}>
   <View style={{flexDirection: 'row', alignItems:'center'}}>
