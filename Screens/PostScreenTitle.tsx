@@ -7,25 +7,23 @@ import Icon from 'react-native-vector-icons/Feather';
 function PostScreenTitle(): JSX.Element
  { return (
   <View style={[{flexDirection: 'column', flex: 1, backgroundColor: 'white'}]}>
-    <View style={{flex: 3, backgroundColor: 'white', justifyContent: "space-between"}}>
-    <TextInput style = {{
-      fontSize: 24,
-      width: 200,
-      fontWeight: '600',
-      color: 'gray',
-      alignItems: 'flex-start',
-      marginTop: 30,
-      marginLeft:0,}} 
-      placeholder = "Title" 
-      textAlign=  "left"/>
-      </View>
+    <View style={{flex: 3, backgroundColor: 'white'}}>
+      <TextInput style = {{
+        fontSize: 24,
+        fontWeight: '600',
+        color: 'gray',
+        marginTop: 30,
+        marginLeft:20,}} 
+        placeholder = "Title" 
+        />
+    </View>
 
     <View style= {{
         borderColor: 'grey',
         borderWidth: 2,
         borderRadius: 10,
         flex: 1,
-        backgroundColor: 'white', justifyContent: "space-between", padding: 5, margin: 20}}>
+        backgroundColor: 'white', padding: 5, margin: 20}}>
 
       <Text style = {{ 
         fontSize: 24,

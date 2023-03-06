@@ -17,15 +17,15 @@ function HomeScreen(): JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         >
         <View style={{flex:1}}>
-          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
+          <Section title="Repeal Section 230 of CDA" description='Qualified Immunity makes it difficult for victims of police misconduct to hold officers accountable for their actions, which can lead to a lack of trust in law enforcement and a breakdown in the relationship between police and the communities they serve.' step={2}>
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your editssss.
           </Section>
-          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
+          <Section title="End Qualified Immunity" description='Online platforms have abused their immunity under Section 230 to allow harmful content to spread on their platforms, including hate speech, disinformation, and extremist content. Platforms like Facebook, Twitter, and YouTube have become too powerful and have failed to adequately moderate harmful content, leading to real-world harm.' step={1}>
           </Section>
-          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
+          <Section title="Increase funding for public schools" description='Increasing school funding is essential to ensure that all students have access to high-quality education and the resources they need to succeed. Here are some reasons why:' step={0}>
           </Section>
-          <Section title="Black Lives Matter" description='Join the Movement to fight for Freedom, Liberation and Justice by signing up for updates, supporting our work, checking out our resources, following us on social media, or wearing our dope, official gear.'>
+          <Section title="Limit construction in national park" description='National parks are often home to unique and fragile ecosystems that are vulnerable to damage from construction activities. Limiting construction can help preserve these ecosystems and protect wildlife habitats from disturbance.' step={3}>
             Read the docs to discover what to do next:
           </Section>
         </View>

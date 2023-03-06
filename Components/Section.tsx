@@ -17,15 +17,16 @@ import IconTextButton from './IconTextButton';
 type SectionProps = PropsWithChildren<{
     title: string;
     description: string;
+    step: number;
   }>;
 
-let displayName = "Tanuj D"
-let handle = "@tjblack"
+let displayName = "John M"
+let handle = "@johnm"
 
 let type = 'Kansas'
 let date = 'March 1'
 
-function Section({children, title, description}: SectionProps): JSX.Element {
+function Section({children, title, description, step}: SectionProps): JSX.Element {
     return (
         <View style={styles.sectionContainer}>
             <View style={{flexDirection: 'row', alignItems:'center'}}>
@@ -41,7 +42,7 @@ function Section({children, title, description}: SectionProps): JSX.Element {
                     </View>
                 </View>
                 <View style={{flex: 1}}></View>
-                <ProgressBar step={1}/>
+                <ProgressBar step={step}/>
                 <Icon name="more-vertical" size={20} color="gray" />
             </View>
             <Text
