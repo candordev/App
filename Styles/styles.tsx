@@ -6,7 +6,7 @@ import {
 const styles = StyleSheet.create({
     sectionContainer: {
       marginTop: 10,
-      paddingHorizontal: 24,
+      paddingHorizontal: 15,
       backgroundColor: '#fff',
       paddingTop:15,
       paddingBottom:15,
@@ -14,13 +14,15 @@ const styles = StyleSheet.create({
     sectionTitle: {
       fontSize: 18,
       fontWeight: '500',
-      marginTop:10
+      marginTop:10,
+      fontFamily: 'Montserrat',
     },
     sectionDescription: {
       marginTop: 8,
       fontSize: 14,
       fontWeight: '400',
       color:'black',
+      fontFamily: 'OpenSans-Regular',
     },
     highlight: {
       fontWeight: '700',
@@ -38,7 +40,6 @@ const styles = StyleSheet.create({
       color: 'gray',
       minHeight: 40,
     },
-
     headerLeft: {
       flex: 1,
       flexDirection: 'row',

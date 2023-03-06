@@ -2,9 +2,15 @@ import React from "react";
 import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-function PostScreen(): JSX.Element {
+type PostScreenProps = {
+  route: any;
+  navigation: any;
+};
+
+function PostScreen({ route, navigation } : PostScreenProps): JSX.Element {
+  const props = route.params;
   return <View>
-    <Text>Post Screen</Text>
+    <Text>{props.title}</Text>
   </View>;
 }
 

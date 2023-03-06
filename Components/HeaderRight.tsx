@@ -25,7 +25,7 @@ function HeaderRight(): JSX.Element {
             setItems={setItems}
             containerStyle={{height:40, width: 150, paddingRight: 10}}
             style={styles.dropdownStyle}
-            textStyle={{fontSize: 18, color: 'gray', fontWeight: '600'}}
+            textStyle={{fontSize: 18, color: 'gray', fontWeight: '500', fontFamily: 'Montserrat-Regular'}}
             dropDownContainerStyle={[styles.dropdownStyle, {borderTopWidth: 1}]}
             ArrowDownIconComponent={() => <Icon name={'chevron-down'} size={20} color={'gray'}/>}
             ArrowUpIconComponent={() => <Icon name={'chevron-up'} size={20} color={'gray'}/>}

@@ -6,13 +6,21 @@ import HeaderRight from '../Components/HeaderRight';
 import Root from './Root';
 import PostScreen from '../Screens/PostScreen';
 import { Text, Touchable, TouchableOpacity, View } from 'react-native';
-import HeaderLeft from '../Components/HeaderLeft';
-import Header from '../Components/Header';
-import BackButton from '../Components/BackButton';
+import {setCustomText} from 'react-native-global-props';
 
 const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {
+
+  // const customTextProps = {
+  //   style: {
+  //     fontSize: 16,
+  //     fontFamily: 'OpenSans-Regular',
+  //     color: 'black'
+  //   }
+  // };
+
+  // setCustomText(customTextProps);
 
   return (
      <NavigationContainer>
