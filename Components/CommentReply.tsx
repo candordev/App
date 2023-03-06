@@ -67,13 +67,13 @@ function CommentReply({
           icon="thumbs-up"
           text="1.2k"
           color={colors.gray}
-          size={20}
+          size={18}
           changedColor={colors.purple}></IconTextButton>
         <IconTextButton
           icon="thumbs-down"
           text="200"
           color={colors.gray}
-          size={20}
+          size={18}
           changedColor={colors.purple}></IconTextButton>
       </View>
       <View>
