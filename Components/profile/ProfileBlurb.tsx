@@ -63,6 +63,7 @@ function ProfileBlurb(): JSX.Element {
             color:'black',
             padding: 5,
             marginTop: 5,
+            fontFamily: 'OpenSans-Regular',
         }}>{bio}</Text>
       </View>
   );

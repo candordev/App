@@ -36,7 +36,7 @@ function App(): JSX.Element {
           name ="post" 
           component={PostScreen}
           options = {({ navigation }) => ({
-            title: 'State',
+            title: '',
             headerTitleStyle: {color: "gray", fontSize: 25},
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
