@@ -15,20 +15,29 @@ let bio =
 
 function ProfileBlurb(): JSX.Element {
   return (
-    <SafeAreaView>
-      {/* <Button title="Tanuj Dunthuluri" /> */}
-      <View style={styles.sectionContainer}>
+      /* <Button title="Tanuj Dunthuluri" /> */
+      <View style={{
+        marginVertical: 10,
+        padding: 5,
+        backgroundColor: '#fff',
+        paddingHorizontal: 15,
+        paddingTop: 10,
+      }}>
         <View
           style={{
             flexDirection: 'row',
-            marginTop: 20,
-            justifyContent: 'center',
-          }}>
+            // justifyContent: 'space-between',
+          }}
+        >
           <ProfilePicture imageUrl={imageUrl} big={true} />
-          <View>
+          <View style={{
+            flexDirection: 'column',
+            justifyContent: 'center',
+            flex: 3
+          }}>
             <View style={{flexDirection: 'row'}}>
               <Text style={{fontSize: 24, marginLeft: 10}}>{displayName}</Text>
-              <Text style={{fontSize: 24, marginLeft: 5, color: 'slategray'}}>
+              <Text style={{fontSize: 24, marginLeft: 10, color: 'gray'}}>
                 {handle}
               </Text>
             </View>
@@ -39,25 +48,23 @@ function ProfileBlurb(): JSX.Element {
               <Text
                 style={{
                   fontSize: 15,
-                  marginLeft: 5,
+                  marginLeft: 10,
                   marginTop: 3,
-                  color: 'slategray',
+                  color: 'mediumslateblue',
                 }}>
                 {flames + ' flames'}
               </Text>
             </View>
-            <View style={{flexDirection:'row'}}>
-              <Text style={{fontSize: 17, marginLeft: 10, marginTop: 3, flex: 1, flexWrap:'wrap'}}>
-                {bio}
-              </Text>
-            </View>
           </View>
-          <View style={{flex: 1}}></View>
         </View>
-        <Text style={styles.sectionTitle}></Text>
-        <Text style={styles.sectionDescription}></Text>
+        {/* <Text style={styles.sectionTitle}>About Me</Text> */}
+        <Text style={{
+            fontWeight: '400',
+            color:'black',
+            padding: 5,
+            marginTop: 5,
+        }}>{bio}</Text>
       </View>
-    </SafeAreaView>
   );
 }
 

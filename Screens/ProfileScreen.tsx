@@ -8,7 +8,10 @@ const Tab = createMaterialTopTabNavigator();
 
 function Nav() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+      tabBarActiveTintColor: 'mediumslateblue',
+      tabBarInactiveTintColor: 'gray',
+    }}>
       <Tab.Screen name="Posts" component={ProfilePosts} />
       <Tab.Screen name="Comments" component={ProfileComments} />
       <Tab.Screen name="Saved" component={ProfileSaved} />
@@ -18,7 +21,6 @@ function Nav() {
 
 function ProfileScreen({navigation}: {navigation: any}): JSX.Element {
   return (
-    // <SafeAreaView>
       <>
         <ProfileBlurb/>
         <Nav/>
