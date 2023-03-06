@@ -88,6 +88,7 @@ const styles = StyleSheet.create({
     commentDescription: {
       marginTop: 4,
       fontSize: 14,
+      marginBottom: 5,
       fontWeight: '400',
       color: colors.black,
       fontFamily: fonts.body,
