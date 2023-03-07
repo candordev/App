@@ -1,12 +1,8 @@
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  Text,
-  View,
+  ScrollView, View
 } from 'react-native';
 
-import styles from '../Styles/styles';
 import Section from '../Components/Section';
 
 type HomeScreenProps = {

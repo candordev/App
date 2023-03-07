@@ -1,9 +1,6 @@
+import type { PropsWithChildren } from 'react';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  Pressable,
-  View,
-} from 'react-native';
+import { Pressable, View } from 'react-native';
 
 import Text from './Native/Text';
 

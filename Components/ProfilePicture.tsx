@@ -1,11 +1,8 @@
 import React from 'react';
 import {
   Image,
-  Pressable,
-  TouchableHighlight,
-  View,
+  Pressable
 } from 'react-native';
-
 import styles from '../Styles/styles';
 
 type ProfilePictureProps = {

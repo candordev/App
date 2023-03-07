@@ -1,9 +1,6 @@
 import React from 'react';
-import {Button, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
-import { ScrollView } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import ProfileSection from './ProfileSection';
-import styles from '../../Styles/styles';
 
 function ProfileSaved({navigation}: {navigation: any}): JSX.Element {
   return (

@@ -1,14 +1,12 @@
-import React from 'react';
-import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
+import { TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
-import HeaderRight from '../Components/HeaderRight';
-import Root from './Root';
-import PostScreen from '../Screens/PostScreen';
-import { Text, Touchable, TouchableOpacity, View } from 'react-native';
-import {setCustomText} from 'react-native-global-props';
 import LoginScreen from '../Screens/LoginScreen';
+import PostScreen from '../Screens/PostScreen';
 import SignupScreen from '../Screens/SignupScreen';
+import Root from './Root';
 
 const Stack = createNativeStackNavigator<AppStackParamList>();
 

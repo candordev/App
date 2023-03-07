@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import {
-    Pressable,
-    Text,
-  View,
+    Pressable, View
 } from 'react-native';
-
-import styles from '../Styles/styles';
-
-import Icon from 'react-native-vector-icons/Feather';
 import IconText from './IconText';
 
 type IconTextButtonProps = {
