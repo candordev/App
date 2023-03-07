@@ -67,6 +67,8 @@ JSX.Element
         marginHorizontal:20,}} 
         placeholder = "Title" 
         multiline = {true}
+        cursorColor = "mediumslateblue"
+        selectionColor={"mediumslateblue"}
         />
     </View>
     <View style= {{

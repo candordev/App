@@ -5,7 +5,7 @@ function PostScreenContent(props:any): JSX.Element {
 
   return ( 
   <View style  = {{flexDirection:'row', flex: 1, 
-  flexWrap: 'wrap'}}>
+  flexWrap: 'wrap', backgroundColor:'white'}}>
      <TextInput style = {{
         fontSize : 20,
         fontWeight: '600',
