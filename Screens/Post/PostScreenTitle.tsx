@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import { Keyboard, Text, TextInput, View } from "react-native";
+import { Keyboard, Pressable, Text, TextInput, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import styles from "../../Styles/styles";
 import Icon from 'react-native-vector-icons/Feather';
@@ -65,8 +65,7 @@ JSX.Element
         fontWeight: '600',
         color: 'gray',
         marginTop: 30,
-        marginLeft:20,
-        marginRight: 20,}} 
+        marginHorizontal:20,}} 
         placeholder = "Title" 
         multiline = {true}
         />
@@ -85,20 +84,19 @@ JSX.Element
         textAlign: 'center',}}
         >Select a Post</Text>
 
-
-      <View  style = {{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding:50}}>
-        <View style={{alignItems:'center'}}>
-        <Icon onPress={() => {setHighlight([true, false, false])}} name="alert-triangle" size={30} color={highlight[0] ? "mediumslateblue" : "gray"}/>
-        <Text style = {{color: 'gray', fontSize: 10, textAlign: 'center', fontWeight: "bold"}}>Problem</Text>
-        </View>
-        <View style={{alignItems:'center'}}>
-        <Icon onPress={() => {setHighlight([false, true, false])}} name="alert-triangle" size={30} color={highlight[1] ? "mediumslateblue" : "gray"}/>
-        <Text style = {{color: 'gray', fontSize: 10, textAlign: 'center', fontWeight: "bold"}}>Poll</Text>
-        </View>
-        <View style={{alignItems:'center'}}>
-        <Icon onPress={() => {setHighlight([false, false, true])}} name="alert-triangle" size={30} color={highlight[2] ? "mediumslateblue" : "gray"}/>
-        <Text style = {{color: 'gray', fontSize: 10, textAlign: 'center', fontWeight: "bold"}}>Solution</Text>
-        </View>
+      <View style = {{flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding:50}}>
+        <Pressable onPress={() => {setHighlight([true, false, false])}} style={{alignItems:'center'}}>
+          <Icon name="alert-triangle" size={30} color={highlight[0] ? "mediumslateblue" : "gray"}/>
+          <Text style = {{color: 'gray', fontSize: 10, textAlign: 'center', fontWeight: "bold", marginTop:5}}>Problem</Text>
+        </Pressable>
+        <Pressable onPress={() => {setHighlight([false, true, false])}} style={{alignItems:'center'}}>
+          <Icon name="archive" size={30} color={highlight[1] ? "mediumslateblue" : "gray"}/>
+          <Text style = {{color: 'gray', fontSize: 10, textAlign: 'center', fontWeight: "bold", marginTop:5}}>Poll</Text>
+        </Pressable>
+        <Pressable onPress={() => {setHighlight([false, false, true])}} style={{alignItems:'center'}}>
+          <Icon name="award" size={30} color={highlight[2] ? "mediumslateblue" : "gray"}/>
+          <Text style = {{color: 'gray', fontSize: 10, fontWeight: "bold", marginTop:5}}>Solution</Text>
+        </Pressable>
       </View>
   </View>
   </View>
