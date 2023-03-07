@@ -1,6 +1,8 @@
 import React, { ReactComponentElement } from 'react';
 import type {PropsWithChildren} from 'react';
-import {Image, Text, View} from 'react-native';
+import {View} from 'react-native';
+
+import Text from './Native/Text';
 
 import styles from '../Styles/styles';
 import ProfilePicture from './ProfilePicture';

@@ -101,6 +101,15 @@ const styles = StyleSheet.create({
       borderLeftWidth: 2,
       borderLeftColor: colors.lightgray,
     },
+    text: {
+      color: 'black',
+      fontFamily: 'OpenSans-Regular',
+    },
+    headerText: {
+      color: 'black',
+      fontSize: 20,
+      fontFamily: 'Montserrat-Regular',
+    }
 });
 
 export default styles;

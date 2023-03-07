@@ -1,8 +1,7 @@
 import React from 'react';
-import {Button, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {View} from 'react-native';
 import ProfilePicture from '../ProfilePicture';
-import styles from '../../Styles/styles';
+import Text from '../Native/Text';
 
 const displayName = 'Tanuj D';
 const handle = '@tjblack';

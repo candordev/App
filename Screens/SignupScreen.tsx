@@ -1,7 +1,6 @@
 import React from "react";
-import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import styles from "../Styles/styles";
+import Text from "../Components/Native/Text";
 
 type SignupScreenProps = {
   route: any;

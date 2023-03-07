@@ -1,12 +1,7 @@
 import React from "react";
-import { Text, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Icon from 'react-native-vector-icons/Feather';
-import IconText from "../Components/IconText";
-import IconTextButton from "../Components/IconTextButton";
-import ProfilePicture from "../Components/ProfilePicture";
-import ProgressBar from "../Components/ProgressBar";
-import styles from "../Styles/styles";
+
+import Text from "../Components/Native/Text";
 
 type LoginScreenProps = {
   route: any;

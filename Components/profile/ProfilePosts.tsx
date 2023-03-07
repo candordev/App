@@ -1,9 +1,9 @@
 import React from 'react';
-import {Button, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import {View} from 'react-native';
 import { ScrollView } from 'react-native';
 import ProfileSection from './ProfileSection';
 import styles from '../../Styles/styles';
+import Text from '../Native/Text';
 
 function ProfilePosts({navigation}: {navigation: any}): JSX.Element {
   return (
