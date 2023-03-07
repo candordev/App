@@ -7,8 +7,17 @@ import Root from './Root';
 import PostScreen from '../Screens/PostScreen';
 import { Text, Touchable, TouchableOpacity, View } from 'react-native';
 import {setCustomText} from 'react-native-global-props';
+import LoginScreen from '../Screens/LoginScreen';
+import SignupScreen from '../Screens/SignupScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator<AppStackParamList>();
+
+type AppStackParamList = {
+  login: undefined;
+  signup: undefined;
+  root: undefined;
+  post: {group: string};
+};
 
 function App(): JSX.Element {
 
@@ -24,7 +33,23 @@ function App(): JSX.Element {
 
   return (
      <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        initialRouteName='root'
+      >
+        <Stack.Screen 
+          name="login" 
+          component={LoginScreen}
+          options = {({ navigation }) => ({
+            headerShown: false
+          })} 
+        />
+        <Stack.Screen 
+          name="signup" 
+          component={SignupScreen}
+          options = {({ navigation }) => ({
+            headerShown: false
+          })} 
+        />
         <Stack.Screen 
           name="root" 
           component={Root}
@@ -35,9 +60,9 @@ function App(): JSX.Element {
         <Stack.Screen 
           name ="post" 
           component={PostScreen}
-          options = {({ navigation }) => ({
-            title: '',
-            headerTitleStyle: {color: "gray", fontSize: 25},
+          options = {({ navigation, route }) => ({
+            title: route.params?.group,
+            headerTitleStyle: {color: "mediumslateblue", fontSize: 25},
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
                 <Icon name="chevron-left" size={30} color="gray" />

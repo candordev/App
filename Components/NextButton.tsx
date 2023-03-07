@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 function NextButton(props : any): JSX.Element {
     return <Pressable style={styles.nextButton} onPress={props.onPress}>
-    <Text style = {{color: 'black'}}>{props.name}</Text>
+    <Text style = {{fontSize: 15, color: 'gray', fontWeight: '500', fontFamily: 'Montserrat-Regular'}}>{props.name}</Text>
     </Pressable>
 }
 
