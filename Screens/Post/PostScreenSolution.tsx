@@ -7,12 +7,11 @@ function PostScreenSolution(props:any): JSX.Element {
         <View style  = {{flexDirection:'row', flex: 1, 
         flexWrap: 'wrap'}}>
            <TextInput style = {{
-              fontSize : 15,
+              fontSize : 20,
               fontWeight: '600',
               color: 'gray',
               marginTop: 30,
-              marginLeft:20,
-              marginRight:20}} 
+              marginHorizontal:20}} 
               placeholder = "Solution Description" 
               multiline = {true}
               autoCapitalize={'sentences'}

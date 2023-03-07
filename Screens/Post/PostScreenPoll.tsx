@@ -4,14 +4,13 @@ import { TextInput, View } from "react-native";
 function PostScreenPoll(props:any): JSX.Element {
     return ( 
         <View style  = {{flexDirection:'row', flex: 1, 
-        flexWrap: 'wrap'}}>
+        flexWrap: 'wrap', backgroundColor:'white'}}>
            <TextInput style = {{
-              fontSize : 15,
+              fontSize : 20,
               fontWeight: '600',
               color: 'gray',
               marginTop: 30,
-              marginLeft:20,
-              marginRight:20}} 
+              marginHorizontal:20}} 
               placeholder = "Poll Description" 
               multiline = {true}
               />
