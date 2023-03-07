@@ -1,11 +1,11 @@
-import React, { ReactComponentElement } from 'react';
-import type {PropsWithChildren} from 'react';
-import {View} from 'react-native';
+import type { PropsWithChildren } from 'react';
+import React from 'react';
+import { View } from 'react-native';
 
-import styles from '../../Styles/styles';
-import ProfilePicture from '../ProfilePicture';
-import IconTextButton from '../IconTextButton';
 import colors from '../../Styles/colors';
+import styles from '../../Styles/styles';
+import IconTextButton from '../IconTextButton';
+import ProfilePicture from '../ProfilePicture';
 
 import Text from '../Native/Text';
 

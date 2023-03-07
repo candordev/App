@@ -1,27 +1,11 @@
-import React, { useState } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import PostScreenTitle from "./PostScreenTitle";
-import PostScreenContent from "./PostScreenContent";
-import NextButton from "../../Components/NextButton";
-import HeaderRight from "../../Components/HeaderRight";
-import { Button } from "react-native";
-import Icon from "react-native-vector-icons/Feather";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from "react";
 import BackButton from "../../Components/BackButton";
-import HeaderLeft from "../../Components/HeaderLeft";
-import PostScreen from "../PostScreen";
+import NextButton from "../../Components/NextButton";
+import PostScreenContent from "./PostScreenContent";
 import PostScreenPoll from "./PostScreenPoll";
 import PostScreenSolution from "./PostScreenSolution";
-const screens = {
-  PostScreenTitle: {
-    screen: PostScreenTitle
-  }, 
-  PostScreenContent: { 
-    screen: PostScreenContent
-  }
-}  
+import PostScreenTitle from "./PostScreenTitle";
 
 const PostStack = createNativeStackNavigator();
 

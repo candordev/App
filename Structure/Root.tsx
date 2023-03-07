@@ -1,13 +1,12 @@
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import React from 'react';
-import { createBottomTabNavigator}  from '@react-navigation/bottom-tabs';
-import HomeScreen from '../Screens/HomeScreen';
-import ChatScreen from '../Screens/ChatScreen';
-import InboxScreen from '../Screens/InboxScreen';
-import ProfileScreen from '../Screens/ProfileScreen';
 import Icon from 'react-native-vector-icons/Feather';
 import HeaderRight from '../Components/HeaderRight';
+import ChatScreen from '../Screens/ChatScreen';
+import HomeScreen from '../Screens/HomeScreen';
+import InboxScreen from '../Screens/InboxScreen';
 import NewPostNav from '../Screens/Post/NewPostNav';
-import PostScreenTitle from '../Screens/Post/PostScreenTitle';
+import ProfileScreen from '../Screens/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
 function Root(): JSX.Element { 

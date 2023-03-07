@@ -1,11 +1,8 @@
 import React from 'react';
 import {
-  View,
+  View
 } from 'react-native';
 import Text from './Native/Text';
-
-import styles from '../Styles/styles';
-
 import Icon from 'react-native-vector-icons/Feather';
 
 type IconTextProps = {
