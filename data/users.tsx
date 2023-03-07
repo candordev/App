@@ -31,13 +31,13 @@ const users: User[] = [
   },
   {
     displayName: 'Rishi Bengani',
-    handle: 'rishTac',
+    handle: 'rishi03',
     profilePic:
       'https://media.licdn.com/dms/image/C4E03AQEcGRPRVQzrrw/profile-displayphoto-shrink_800_800/0/1632757524392?e=2147483647&v=beta&t=tkJ9Y4d2xgNu-gJSjby8Mbf1vqQmhn4siUe_Gm-KsT4',
     followers: 29543,
     flames: 26502,
     bio: "Hi! My name is Rishi Bengani. I'm an aspiring politician, planning on running for Governer of Kansas!",
-    uid: 3
+    uid: 3,
   },
 ];
 

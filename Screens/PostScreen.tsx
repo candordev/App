@@ -9,6 +9,7 @@ import styles from '../Styles/styles';
 import Comment from '../Components/Comment';
 import CommentReply from '../Components/CommentReply';
 import {ScrollView} from 'react-native';
+import { comments, posts, users, groups } from '../data';
 
 type PostScreenProps = {
   route: any;
@@ -92,9 +93,9 @@ function PostScreen({route, navigation}: PostScreenProps): JSX.Element {
         </View>
         <View style={{flex: 1, margin: 5}}>
           <View style={{flex: 1}}>
-            <Comment description="Just read an article about qualified immunity and how it shields police officers from accountability. This needs to change.">
+            <Comment description="">
               <CommentReply description="I think qualified immunity is important because it protects officers who are just doing their job.">
-                <CommentReply description="But it also allows officers to get away with using excessive force or violating people's rights. They should be held accountable like everyone else."></CommentReply>
+                <CommentReply description=""></CommentReply>
                 <CommentReply description="response comment"></CommentReply>
               </CommentReply>
               <CommentReply description="response comment"></CommentReply>

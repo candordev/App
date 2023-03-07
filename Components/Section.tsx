@@ -78,10 +78,10 @@ function Section({children, title, description, step, posterUID, raised, numComm
                     {description}
                 </Text>
                 <View style={{flexDirection: 'row', justifyContent:'space-between', marginTop:15}}>
-                    <IconText icon='dollar-sign' text='400.66' color='seagreen' size={20}></IconText>
-                    <IconText icon='message-square' text='275' color='gray' size={20}></IconText>
-                    <IconTextButton icon='thumbs-up' text='1.2k' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
-                    <IconTextButton icon='thumbs-down' text='200' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                    <IconText icon='dollar-sign' text={raised + ''} color='seagreen' size={20}></IconText>
+                    <IconText icon='message-square' text={numComments + ''} color='gray' size={20}></IconText>
+                    <IconTextButton icon='thumbs-up' text={likes} color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                    <IconTextButton icon='thumbs-down' text={dislikes} color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
                 </View>
             </View>
         </Pressable>
