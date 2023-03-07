@@ -62,7 +62,7 @@ function App(): JSX.Element {
           component={PostScreen}
           options = {({ navigation, route }) => ({
             title: route.params?.group,
-            headerTitleStyle: {color: "gray", fontSize: 25},
+            headerTitleStyle: {color: "mediumslateblue", fontSize: 25},
             headerLeft: () => (
               <TouchableOpacity onPress={() => navigation.goBack()}>
                 <Icon name="chevron-left" size={30} color="gray" />
