@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
     },
     dropdownStyle: {
       borderColor: colors.gray,
-      borderWidth: 2,
+      borderWidth: 1.5,
       backgroundColor: colors.white,
       color: colors.gray,
-      minHeight: 40,
+      minHeight: 35,
     },
     headerLeft: {
       flex: 1,
@@ -73,10 +73,11 @@ const styles = StyleSheet.create({
     nextButton: {
       backgroundColor: colors.white,
       borderColor: colors.gray,
-      borderWidth: 2,
-      borderRadius: 4,
-      padding: 5,
-      marginBottom: 5,
+      borderWidth: 1.5,
+      borderRadius: 7,
+      paddingVertical: 7,
+      paddingHorizontal: 10,
+      marginBottom: Platform.OS === 'ios' ? 10 : 0,
     },
     commentContainer: {
       paddingHorizontal: 15,
@@ -98,8 +99,17 @@ const styles = StyleSheet.create({
       backgroundColor: colors.white,
       paddingTop:15,
       borderLeftWidth: 2,
-      borderLeftColor: colors.gray
+      borderLeftColor: colors.lightgray,
     },
+    text: {
+      color: 'black',
+      fontFamily: 'OpenSans-Regular',
+    },
+    headerText: {
+      color: 'black',
+      fontSize: 20,
+      fontFamily: 'Montserrat-Regular',
+    }
 });
 
 export default styles;

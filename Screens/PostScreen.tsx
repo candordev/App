@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import IconText from '../Components/IconText';
 import IconTextButton from '../Components/IconTextButton';
@@ -11,6 +11,8 @@ import CommentReply from '../Components/CommentReply';
 import {ScrollView} from 'react-native';
 import { comments, posts, users, groups } from '../data';
 
+import Text from '../Components/Native/Text';
+
 type PostScreenProps = {
   route: any;
   navigation: any;
@@ -18,8 +20,6 @@ type PostScreenProps = {
 
 function PostScreen({route, navigation}: PostScreenProps): JSX.Element {
   const props = route.params;
-  navigation.setOptions({title: props.group});
-  console.log(props);
   return (
     <View style={{flex: 1}}>
       <ScrollView contentInsetAdjustmentBehavior="automatic">

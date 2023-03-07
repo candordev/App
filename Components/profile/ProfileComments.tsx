@@ -1,8 +1,6 @@
 import React from 'react';
-import {Button, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
+import { ScrollView, View } from 'react-native';
 import ProfileComment from './ProfileComment';
-import { ScrollView } from 'react-native';
 
 function ProfileComments({navigation}: {navigation: any}): JSX.Element {
   return (

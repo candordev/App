@@ -1,8 +1,7 @@
 import React from "react";
-import { Text, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import styles from "../Styles/styles";
+import { TextInput, View } from "react-native";
 import Icon from 'react-native-vector-icons/Feather';
+import Text from "../Components/Native/Text";
 
 function PostScreenTitle(): JSX.Element
  { return (
