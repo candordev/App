@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
-import { Keyboard, Text, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import styles from "../../Styles/styles";
+import { TextInput, View } from "react-native";
 import Icon from 'react-native-vector-icons/Feather';
 import { useFocusEffect } from "@react-navigation/native";
 import NextButton from "../../Components/NextButton";
+import Text from "../../Components/Native/Text";
 
 function PostScreenTitle({navigation} : {navigation : any}): 
 JSX.Element

@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  Text,
   View,
 } from 'react-native';
 
@@ -16,12 +15,6 @@ function ProgressBar(props: ProgressBarProps): JSX.Element {
             {/* {props.step >= 1 && <LinearGradient colors={['#c4b8fd', '#b2a2fc', '#a08dfb']}></LinearGradient>}
             {props.step >= 2 && <View style={{width:33, height: 15, backgroundColor: '#c9c9c9'}} />}
             {props.step >= 3 &&<View style={{width:33, height: 15, backgroundColor: '#aeaeae'}} />} */}
-
-{/* <LinearGradient start={{x: 0, y: 0}} end={{x: 1, y: 0}} colors={['#4c669f', '#3b5998', '#192f6a']}>
-  <Text>
-    Sign in with Facebook
-  </Text>
-</LinearGradient> */}
 
         {props.step == 1 && <LinearGradient
           colors={['#dcd5ff', '#cec4ff']}

@@ -1,8 +1,9 @@
-import { Text, View } from 'react-native';
+import {View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import styles from '../Styles/styles';
 import DropDownPicker from 'react-native-dropdown-picker';
 import { useState } from 'react';
+import Text from './Native/Text';
 
 function HeaderLeft(): JSX.Element {
 
