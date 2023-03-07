@@ -1,17 +1,16 @@
 import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator}  from '@react-navigation/bottom-tabs';
 import HomeScreen from '../Screens/HomeScreen';
 import ChatScreen from '../Screens/ChatScreen';
 import InboxScreen from '../Screens/InboxScreen';
 import ProfileScreen from '../Screens/ProfileScreen';
 import Icon from 'react-native-vector-icons/Feather';
 import HeaderRight from '../Components/HeaderRight';
-import NewPostNav from '../Screens/NewPostNav';
+import NewPostNav from '../Screens/Post/NewPostNav';
+import PostScreenTitle from '../Screens/Post/PostScreenTitle';
 
 const Tab = createBottomTabNavigator();
-
-function Root(): JSX.Element {
-
+function Root(): JSX.Element { 
   return (
     <Tab.Navigator
         screenOptions={({ route }) => ({
@@ -43,7 +42,7 @@ function Root(): JSX.Element {
     >
     <Tab.Screen name="Home" component={HomeScreen} />
     <Tab.Screen name="Chat" component={ChatScreen} />
-    <Tab.Screen name="NewPost" component={NewPostNav} options={{headerShown: false}} />
+    <Tab.Screen name="NewPost" component={NewPostNav} options={{headerShown: false, unmountOnBlur: true}} />
     <Tab.Screen name="Inbox" component={InboxScreen} />
     <Tab.Screen name="Profile" component={ProfileScreen} />
     </Tab.Navigator>
