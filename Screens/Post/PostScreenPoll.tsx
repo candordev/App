@@ -1,7 +1,5 @@
 import React from "react";
-import { Text, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
-import NewPostNav from "./NewPostNav";
+import { TextInput, View } from "react-native";
 
 function PostScreenPoll(props:any): JSX.Element {
     return ( 

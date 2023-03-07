@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import IconText from '../Components/IconText';
 import IconTextButton from '../Components/IconTextButton';
@@ -9,6 +9,8 @@ import styles from '../Styles/styles';
 import Comment from '../Components/Comment';
 import CommentReply from '../Components/CommentReply';
 import {ScrollView} from 'react-native';
+
+import Text from '../Components/Native/Text';
 
 type PostScreenProps = {
   route: any;

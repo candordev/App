@@ -1,11 +1,8 @@
+import type { PropsWithChildren } from 'react';
 import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-    Image,
-  Pressable,
-  Text,
-  View,
-} from 'react-native';
+import { Pressable, View } from 'react-native';
+
+import Text from './Native/Text';
 
 import styles from '../Styles/styles';
 import ProfilePicture from './ProfilePicture';
@@ -22,7 +19,7 @@ type SectionProps = PropsWithChildren<{
     navigation: any;
   }>;
 
-let displayName = "John M"
+let displayName = "John MQ"
 let handle = "@johnm"
 
 let group = 'Kansas'
@@ -31,7 +28,7 @@ let date = 'March 1'
 function Section({children, title, description, step, navigation}: SectionProps): JSX.Element {
     return (
         <Pressable
-        onPress={() => {navigation.navigate('post', {title: title, description: description, step: step, group: group, displayName: displayName, handle: handle, date: date})}}
+    onPress={() => {navigation.navigate('post', {title: title, description: description, step: step, group: group, displayName: displayName, handle: handle, date: date})}}
         >
             <View style={styles.sectionContainer}>
                 <View style={{flexDirection: 'row', alignItems:'center'}}>

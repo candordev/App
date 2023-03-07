@@ -1,15 +1,14 @@
-import React, { ReactComponentElement } from 'react';
-import type {PropsWithChildren} from 'react';
-import {Image, Text, View} from 'react-native';
+import type { PropsWithChildren } from 'react';
+import React from 'react';
+import { View } from 'react-native';
+
+import Text from './Native/Text';
 
 import styles from '../Styles/styles';
 import ProfilePicture from './ProfilePicture';
-import ProgressBar from './ProgressBar';
 
-import Icon from 'react-native-vector-icons/Feather';
-import IconText from './IconText';
-import IconTextButton from './IconTextButton';
 import colors from '../Styles/colors';
+import IconTextButton from './IconTextButton';
 
 type CommentProps = PropsWithChildren<{
       description: string;

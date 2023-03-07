@@ -1,8 +1,7 @@
 import React from 'react';
-import {Button, Text, View} from 'react-native';
-import {SafeAreaView} from 'react-native-safe-area-context';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import { ProfileComments, ProfilePosts, ProfileSaved, ProfileBlurb } from '../Components/profile';
+import { ProfileComments, ProfilePosts, ProfileSaved, ProfileBlurb } from '../Components/Profile';
+import colors from '../Styles/colors';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -11,6 +10,7 @@ function Nav() {
     <Tab.Navigator screenOptions={{
       tabBarActiveTintColor: 'mediumslateblue',
       tabBarInactiveTintColor: 'gray',
+      tabBarIndicatorStyle: {backgroundColor: colors.purple },
     }}>
       <Tab.Screen name="Posts" component={ProfilePosts} />
       <Tab.Screen name="Comments" component={ProfileComments} />
