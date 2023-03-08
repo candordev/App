@@ -8,7 +8,7 @@ function ProfileSaved({navigation}: {navigation: any}): JSX.Element {
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View style={{flex: 1}}>
           <ProfileSection
-            title="End Qualified Immunity"
+            title="Repeal Section 230 of CDA"
             description="Online platforms have abused their immunity under ProfileSection 230 to allow harmful content to spread on their platforms, including hate speech, disinformation, and extremist content. Platforms like Facebook, Twitter, and YouTube have become too powerful and have failed to adequately moderate harmful content, leading to real-world harm."
             step={1}></ProfileSection>
           {/* <ProfileSection

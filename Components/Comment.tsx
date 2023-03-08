@@ -11,32 +11,31 @@ import colors from '../Styles/colors';
 import IconTextButton from './IconTextButton';
 
 type CommentProps = PropsWithChildren<{
+      posterName: string;
+      posterHandle: string;
+      posterImageUrl: string;
+      ago: string;
       description: string;
 }>;
 
-let displayName = 'John M';
-let handle = '@johnm';
-
-const ago = '40 min';
-
 function Comment({
   children,
-  description,
+  ...props
 }: CommentProps): JSX.Element {
   return (
     <View style={styles.commentContainer}>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <ProfilePicture
-          imageUrl="https://scontent-atl3-1.cdninstagram.com/v/t51.2885-19/244305674_1199851353874099_7498215930166384149_n.jpg?stp=dst-jpg_s320x320&_nc_ht=scontent-atl3-1.cdninstagram.com&_nc_cat=107&_nc_ohc=hB9YE6db7AIAX_HgwSF&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AfCpwZNohvZhEMUcJuq0ytfmPCui_c-jViJc7cmjZ8AYew&oe=64058AA8&_nc_sid=8fd12b"
+          imageUrl={props.posterImageUrl}
           big={false}
         />
         <View>
           <View style={{flexDirection: 'row'}}>
             <Text style={{fontSize: 15, marginLeft: 10, color: colors.black}}>
-              {displayName}
+              {props.posterName}
             </Text>
             <Text style={{fontSize: 15, marginLeft: 5, color: colors.gray}}>
-              {handle}
+              {props.posterHandle}
             </Text>
           </View>
           <View style={{flexDirection: 'row'}}>
@@ -47,13 +46,13 @@ function Comment({
                 marginTop: 3,
                 color: colors.gray,
               }}>
-              {ago + ' ago'}
+              {props.ago + ' ago'}
             </Text>
           </View>
         </View>
         <View style={{flex: 1}}></View>
       </View>
-      <Text style={styles.commentDescription}>{description}</Text>
+      <Text style={styles.commentDescription}>{props.description}</Text>
       <View
         style={{
           flexDirection: 'row',

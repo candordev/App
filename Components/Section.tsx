@@ -11,28 +11,47 @@ import ProgressBar from './ProgressBar';
 import Icon from 'react-native-vector-icons/Feather';
 import IconText from './IconText';
 import IconTextButton from './IconTextButton';
+import { useState } from 'react';
+import { users, groups } from '../data';
 
 type SectionProps = PropsWithChildren<{
     title: string;
     description: string;
     step: number;
+    posterUID: number;
+    raised: number;
+    numComments: number;
+    likes: string;
+    dislikes: string;
+    date: string,
+    group: string,
+    uid: number;
     navigation: any;
-  }>;
+}>;
 
-let displayName = "John MQ"
-let handle = "@johnm"
+function Section({children, title, description, step, posterUID, raised, numComments, likes, dislikes, date, group, uid, navigation}: SectionProps): JSX.Element {
+    const user = users.findIndex((u) => {return u.uid == posterUID});
+    const groupIdx = groups.findIndex((g) => {return g.name == group});
+    let displayName = "Loading...";
+    let handle = "Loading...";
+    let url = "https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg";
+    // const [displayName, setDisplayName] = useState("Loading...");
+    // const [handle, setHandle] = useState("Loading...");
+    // const [url, setUrl] = useState("https://st4.depositphotos.com/14953852/22772/v/600/depositphotos_227725020-stock-illustration-image-available-icon-flat-vector.jpg");
 
-let group = 'Kansas'
-let date = 'March 1'
+    if (user != -1) {
+        displayName = users[user].displayName;
+        handle = users[user].handle;
+        url = groups[groupIdx].pic;
+    }
 
-function Section({children, title, description, step, navigation}: SectionProps): JSX.Element {
     return (
         <Pressable
     onPress={() => {navigation.navigate('post', {title: title, description: description, step: step, group: group, displayName: displayName, handle: handle, date: date})}}
         >
             <View style={styles.sectionContainer}>
                 <View style={{flexDirection: 'row', alignItems:'center'}}>
-                    <ProfilePicture imageUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Flag_of_Kansas_%281925%E2%80%931927%29.svg/223px-Flag_of_Kansas_%281925%E2%80%931927%29.svg.png' big={false}/>
+                    <ProfilePicture imageUrl={url} big={false}/>
                     <View>
                         <View style={{flexDirection: 'row'}}>
                             <Text style={{fontSize: 15, marginLeft: 10, color: 'black'}}>{displayName}</Text>
@@ -56,10 +75,10 @@ function Section({children, title, description, step, navigation}: SectionProps)
                     {description}
                 </Text>
                 <View style={{flexDirection: 'row', justifyContent:'space-between', marginTop:15}}>
-                    <IconText icon='dollar-sign' text='400.66' color='seagreen' size={20}></IconText>
-                    <IconText icon='message-square' text='275' color='gray' size={20}></IconText>
-                    <IconTextButton icon='thumbs-up' text='1.2k' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
-                    <IconTextButton icon='thumbs-down' text='200' color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                    <IconText icon='dollar-sign' text={raised + ''} color='seagreen' size={20}></IconText>
+                    <IconText icon='message-square' text={numComments + ''} color='gray' size={20}></IconText>
+                    <IconTextButton icon='thumbs-up' text={likes} color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
+                    <IconTextButton icon='thumbs-down' text={dislikes} color='gray' size={20} changedColor='mediumslateblue'></IconTextButton>
                 </View>
             </View>
         </Pressable>

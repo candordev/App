@@ -18,7 +18,7 @@ let handle = '@johnm';
 
 const ago = '40 min';
 
-const group = "Kansas";
+const group = "4th District";
 
 function ProfileComment({
   children,
