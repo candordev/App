@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import { Pressable, TextInput, View } from "react-native";
 import Icon from 'react-native-vector-icons/Feather';
 import { useFocusEffect } from "@react-navigation/native";
@@ -16,10 +16,8 @@ JSX.Element
   }, [highlight]);
   
   useFocusEffect(
-    React.useCallback(() => {
-      return () => {
-        setHighlight([false, false, false]);
-      };
+    useCallback(() => {
+      setHighlight([false, false, false]);
     }, [])
   );
 

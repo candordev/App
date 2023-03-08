@@ -11,14 +11,14 @@ function ProfilePosts({navigation}: {navigation: any}): JSX.Element {
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View style={{flex: 1}}>
           <ProfileSection
-            title="Repeal ProfileSection 230 of CDA"
+            title="End Qualified Immunity"
             description="Qualified Immunity makes it difficult for victims of police misconduct to hold officers accountable for their actions, which can lead to a lack of trust in law enforcement and a breakdown in the relationship between police and the communities they serve."
             step={2}>
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your editssss.
           </ProfileSection>
           <ProfileSection
-            title="End Qualified Immunity"
+            title="Repeal Section 230 of CDA"
             description="Online platforms have abused their immunity under ProfileSection 230 to allow harmful content to spread on their platforms, including hate speech, disinformation, and extremist content. Platforms like Facebook, Twitter, and YouTube have become too powerful and have failed to adequately moderate harmful content, leading to real-world harm."
             step={1}></ProfileSection>
           <ProfileSection
