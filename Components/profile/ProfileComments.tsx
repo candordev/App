@@ -7,8 +7,8 @@ function ProfileComments({navigation}: {navigation: any}): JSX.Element {
     <View style={{flex: 1, margin: 5}}>
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View style={{flex: 1}}>
-          <ProfileComment description="Just read an article about qualified immunity and how it shields police officers from accountability. This needs to change."/>
-          <ProfileComment description="Tanuj I love your posts! I think you should run."></ProfileComment>
+          <ProfileComment description="I posted something very similar about qualified immunity and how it shields police officers from accountability. This needs to change."/>
+          <ProfileComment description="Rishi I love your posts! I think you should run."></ProfileComment>
         </View>
       </ScrollView>
     </View>

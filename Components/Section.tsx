@@ -30,7 +30,7 @@ type SectionProps = PropsWithChildren<{
 }>;
 
 function Section({children, title, description, step, posterUID, raised, numComments, likes, dislikes, date, group, uid, navigation}: SectionProps): JSX.Element {
-    const user = users.findIndex((u) => {return u.uid == uid});
+    const user = users.findIndex((u) => {return u.uid == posterUID});
     const groupIdx = groups.findIndex((g) => {return g.name == group});
     let displayName = "Loading...";
     let handle = "Loading...";
