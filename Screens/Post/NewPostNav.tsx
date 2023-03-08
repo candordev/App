@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from "react";
 import BackButton from "../../Components/BackButton";
-import NextButton from "../../Components/NextButton";
+import Button from "../../Components/Button";
 import PostScreenContent from "./PostScreenContent";
 import PostScreenPoll from "./PostScreenPoll";
 import PostScreenSolution from "./PostScreenSolution";
@@ -21,7 +21,7 @@ function NewPostNav({navigation} : {navigation : any}): JSX.Element {
       <PostStack.Screen name="new post" component={PostScreenTitle}
       // options = {{
       //   headerRight: () => (
-      //     <NextButton name= "Next" onPress = {() => navigation.navigate('content post')}/>
+      //     <Button name= "Next" onPress = {() => navigation.navigate('content post')}/>
       //   )
       // }}
       />
@@ -33,7 +33,7 @@ function NewPostNav({navigation} : {navigation : any}): JSX.Element {
         ),
         headerTitle: "Candor",
         headerRight: () => (
-          <NextButton name= "Submit" onPress = {() => navigation.navigate('Home')}/>
+          <Button name= "Submit" onPress = {() => navigation.navigate('Home')}/>
         )
         
         }} component = {PostScreenContent}/>
@@ -45,7 +45,7 @@ function NewPostNav({navigation} : {navigation : any}): JSX.Element {
         ),
         headerTitle: "Candor",
         headerRight: () => (
-          <NextButton name= "Submit" onPress = {() => navigation.navigate('Home')}/>
+          <Button name= "Submit" onPress = {() => navigation.navigate('Home')}/>
         )
         
         }} component = {PostScreenPoll}/>
@@ -57,7 +57,7 @@ function NewPostNav({navigation} : {navigation : any}): JSX.Element {
         ),
         headerTitle: "Candor",
         headerRight: () => (
-          <NextButton name= "Submit" onPress = {() => navigation.navigate('Home')}/>
+          <Button name= "Submit" onPress = {() => navigation.navigate('Home')}/>
         )
         
         }} component = {PostScreenSolution}/>

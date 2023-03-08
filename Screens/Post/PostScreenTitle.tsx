@@ -2,47 +2,36 @@ import React, {useEffect, useState} from "react";
 import { Pressable, TextInput, View } from "react-native";
 import Icon from 'react-native-vector-icons/Feather';
 import { useFocusEffect } from "@react-navigation/native";
-import NextButton from "../../Components/NextButton";
+import Button from "../../Components/Button";
 import Text from "../../Components/Native/Text";
 
-function PostScreenTitle({navigation} : {navigation : any}): 
-JSX.Element
- 
-{ 
+function PostScreenTitle({navigation} : {navigation : any}):JSX.Element { 
   const [highlight, setHighlight] = useState([false, false, false]);
   
   useEffect(() => {
     updateNextButton(navigation); 
   }, [highlight]);
-  
-  useFocusEffect(
-    React.useCallback(() => {
-      return () => {
-        setHighlight([false, false, false]);
-      };
-    }, [])
-  );
 
   function updateNextButton(navigation: any) {
     console.log(highlight);
     if (highlight[0]) {
       navigation.setOptions({
         headerRight: () => (
-          <NextButton name="Next" onPress={() => navigation.navigate('content post')} />
+          <Button name="Next" onPress={() => navigation.navigate('content post')} />
         )
       });
     }
     else if (highlight[1]) {
       navigation.setOptions({
         headerRight: () => (
-          <NextButton name="Next" onPress={() => { { navigation.navigate('poll post'); } } } />
+          <Button name="Next" onPress={() => { { navigation.navigate('poll post'); } } } />
         )
       });
     }
     else if (highlight[2]) {
       navigation.setOptions({
         headerRight: () => (
-          <NextButton name="Next" onPress={() => navigation.navigate('solution post')} />
+          <Button name="Next" onPress={() => navigation.navigate('solution post')} />
         )
       });
     }
