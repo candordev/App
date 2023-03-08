@@ -32,7 +32,7 @@ function App(): JSX.Element {
   return (
      <NavigationContainer>
       <Stack.Navigator
-        initialRouteName='root'
+        //initialRouteName='root'
       >
         <Stack.Screen 
           name="login" 
