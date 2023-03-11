@@ -56,7 +56,7 @@ function SignupScreen({ route, navigation } : SignupScreenProps): JSX.Element {
         value={confirmPassword}
         onChangeText={setConfirmPassword}
       />
-      <Button title="Signup" onPress={handleSignup} style={styles.button} textStyle={styles.buttonText}/>
+      <Button text="Signup" onPress={handleSignup} style={styles.button} textStyle={styles.buttonText}/>
     </View>
   );
 }

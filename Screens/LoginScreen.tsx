@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Button, Pressable, StyleSheet, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Pressable, StyleSheet, TextInput, View } from "react-native";
 import HeaderText from "../Components/Native/HeaderText";
 
 import Text from "../Components/Native/Text";
-import NextButton from "../Components/NextButton";
+import Button from "../Components/Button";
 
 type LoginScreenProps = {
   route: any;
@@ -39,7 +38,7 @@ function LoginScreen({ route, navigation } : LoginScreenProps): JSX.Element {
         value={password}
         onChangeText={(text) => setPassword(text)}
       />
-      <NextButton title="Login" onPress={handleLogin} style={styles.button} textStyle={styles.buttonText}/>
+      <Button text="Login" onPress={handleLogin} style={styles.button} textStyle={styles.buttonText}/>
       <Pressable style={styles.signupButton} onPress={handleSignup}>
         <Text style={styles.signupText}>Don't have an account? Sign up</Text>
       </Pressable>

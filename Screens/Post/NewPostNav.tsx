@@ -1,12 +1,12 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import BackButton from '../../Components/BackButton';
-import NextButton from '../../Components/Button';
 import {posts} from '../../data';
 import PostScreenContent from './PostScreenContent';
 import PostScreenPoll from './PostScreenPoll';
 import PostScreenSolution from './PostScreenSolution';
 import PostScreenTitle from './PostScreenTitle';
+import Button from '../../Components/Button';
 
 const PostStack = createNativeStackNavigator();
 
@@ -36,8 +36,8 @@ function NewPostNav({navigation}: {navigation: any}): JSX.Element {
           ),
           headerTitle: 'Candor',
           headerRight: () => (
-            <NextButton
-              name="Submit"
+            <Button
+              text="Submit"
               onPress={() => {
                 console.log("IN HERE")
                 posts.unshift({
@@ -71,8 +71,8 @@ function NewPostNav({navigation}: {navigation: any}): JSX.Element {
           ),
           headerTitle: 'Candor',
           headerRight: () => (
-            <NextButton
-              name="Submit"
+            <Button
+              text="Submit"
               onPress={() => {
                 posts.unshift({
                   title: 'Some Law idk',
@@ -104,8 +104,8 @@ function NewPostNav({navigation}: {navigation: any}): JSX.Element {
           ),
           headerTitle: 'Candor',
           headerRight: () => (
-            <NextButton
-              name="Submit"
+            <Button
+              text="Submit"
               onPress={() => navigation.navigate('Home')}
             />
           ),

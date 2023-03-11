@@ -17,21 +17,21 @@ function PostScreenTitle({navigation} : {navigation : any}):JSX.Element {
     if (highlight[0]) {
       navigation.setOptions({
         headerRight: () => (
-          <Button name="Next" onPress={() => navigation.navigate('content post')} />
+          <Button text="Next" onPress={() => navigation.navigate('content post')} />
         )
       });
     }
     else if (highlight[1]) {
       navigation.setOptions({
         headerRight: () => (
-          <Button name="Next" onPress={() => { { navigation.navigate('poll post'); } } } />
+          <Button text="Next" onPress={() => { { navigation.navigate('poll post'); } } } />
         )
       });
     }
     else if (highlight[2]) {
       navigation.setOptions({
         headerRight: () => (
-          <Button name="Next" onPress={() => navigation.navigate('solution post')} />
+          <Button text="Next" onPress={() => navigation.navigate('solution post')} />
         )
       });
     }
