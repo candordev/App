@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { Button, Pressable, StyleSheet, TextInput, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, TextInput, View } from "react-native";
 import BackButton from "../Components/BackButton";
 import HeaderText from "../Components/Native/HeaderText";
-
-import Text from "../Components/Native/Text";
-import NextButton from "../Components/NextButton";
+import Button from "../Components/Button";
 
 type SignupScreenProps = {
   route: any;
@@ -59,7 +56,7 @@ function SignupScreen({ route, navigation } : SignupScreenProps): JSX.Element {
         value={confirmPassword}
         onChangeText={setConfirmPassword}
       />
-      <NextButton title="Signup" onPress={handleSignup} style={styles.button} textStyle={styles.buttonText}/>
+      <Button text="Signup" onPress={handleSignup} style={styles.button} textStyle={styles.buttonText}/>
     </View>
   );
 }

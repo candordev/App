@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
       borderColor: colors.gray,
     },
 
-    nextButton: {
+    button: {
       backgroundColor: colors.white,
       borderColor: colors.gray,
       borderWidth: 1.5,
